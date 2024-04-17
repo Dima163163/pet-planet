@@ -7,6 +7,9 @@
 	<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>PetPlanet - магазин товаров для животных</title>
+	<link rel="preload" href="/fonts/onest-v6-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin>
+	<link rel="preload" href="/fonts/onest-v6-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin>
+	<link rel="stylesheet" href="scss/index.scss">
 </head>
 
 <body>
@@ -17,55 +20,65 @@
 	</header>
 
 	<main class="main">
-		<h1>PetPlanet - магазин товаров для животных</h1>
+		<h1 class="visually-hidden">PetPlanet - магазин товаров для животных</h1>
 		<section class="hero">
-			<div class="container">
-				<h2>Товары для твоих любимцев</h2>
-				<img src="./img/title.svg" alt="Товары для твоих любимцев">
-				<p class="hero__text">Большой выбор домиков, лежанок и кормов для кошек и собак</p>
+			<div class="container hero__container">
+				<h2 class="visually-hidden">Товары для твоих любимцев</h2>
+				<img class="hero__title" src="./img/title.svg" alt="Товары для твоих любимцев">
+				<p class="hero__text">Большой выбор домиков, лежанок и&nbsp;кормов для кошек и&nbsp;собак</p>
 			</div>
 		</section>
 
 		<section class="about">
 			<div class="container">
 
-				<h2 class="about__title">О нас</h2>
+				<h2 class="about__title">О&nbsp;нас</h2>
 				<div class="about__box">
 					<!-- кошка -->
 					<div class="about__content">
-						<p class="about__text">Мы — команда любящих и заботливых владельцев животных, которые с особым вниманием
-							относятся к потребностям и радостям
+						<p class="about__text">Мы&nbsp;&mdash; команда любящих и&nbsp;заботливых владельцев животных, которые
+							с&nbsp;особым вниманием
+							относятся к&nbsp;потребностям и&nbsp;радостям
 							наших пушистых друзей.
 						</p>
 						<p class="about__text">
-							Стремясь к тому, чтобы ваш питомец был здоровым, счастливым и полным энергии, мы предлагаем только лучшие
+							Стремясь к&nbsp;тому, чтобы ваш питомец был здоровым, счастливым и&nbsp;полным энергии, мы&nbsp;предлагаем
+							только лучшие
 							товары
-							и услуги, проверенные временем и рекомендованные ветеринарами.</p>
+							и&nbsp;услуги, проверенные временем и&nbsp;рекомендованные ветеринарами.
+						</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<section class="advantages">
-			<div class="container">
-				<h2 class="advantages__title">Наши преимущества</h2>
-				<ul class="advantages__list">
-					<li class="advantages__item">
-						<h3 class="advantages__subtitle">Широкий ассортимент</h3>
-						<p class="advantages__text">У нас есть все для того, чтобы сделать жизнь вашего любимца комфортной и уютной.
-						</p>
-					</li>
-					<li class="advantages__item">
-						<h3 class="advantages__subtitle">Качество и безопасность</h3>
-						<p class="advantages__text">Мы тщательно отбираем товары для наших клиентов, уделяя особое внимание качеству
-							и безопасности.</p>
-					</li>
-					<li class="advantages__item">
-						<h3 class="advantages__subtitle">Персональныйподход</h3>
-						<p class="advantages__text">Мы понимаем, что каждый питомец уникален, поэтому предлагаем вам индивидуальные
-							рекомендации по выбору товаров.</p>
-					</li>
-				</ul>
+			<div class="advantages__bg">
+				<div class="container">
+					<h2 class="advantages__title">Наши преимущества</h2>
+					<ul class="advantages__list">
+						<li class="advantages__item">
+							<h3 class="advantages__subtitle">Широкий ассортимент</h3>
+							<p class="advantages__text">У&nbsp;нас есть все для того, чтобы сделать жизнь вашего любимца комфортной
+								и&nbsp;уютной.
+							</p>
+						</li>
+						<li class="advantages__item">
+							<h3 class="advantages__subtitle">Качество и&nbsp;безопасность</h3>
+							<p class="advantages__text">Мы&nbsp;тщательно отбираем товары для наших клиентов, уделяя особое внимание
+								качеству
+								и&nbsp;безопасности.
+							</p>
+						</li>
+						<li class="advantages__item">
+							<h3 class="advantages__subtitle">Персональный подход</h3>
+							<p class="advantages__text">Мы&nbsp;понимаем, что каждый питомец уникален, поэтому предлагаем вам
+								индивидуальные
+								рекомендации по&nbsp;выбору товаров.
+							</p>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
@@ -73,7 +86,7 @@
 			<div class="container">
 				<form class="subscribe__form" action="#" method="post">
 					<h2 class="subscribe__title">
-						Подпишись на рассылку и узнавай о новинках первым!
+						Подпишись на&nbsp;рассылку и&nbsp;узнавай о&nbsp;новинках первым!
 					</h2>
 					<fieldset class="subscribe__field">
 						<input class="subscribe__input" type="email" name="email" placeholder="E-mail">
@@ -85,22 +98,22 @@
 	</main>
 
 	<footer class="footer">
-		<div class="container">
-			<img src="./img/logo.svg" alt="Логотип с лапой магазина PetPlanet">
+		<div class="container footer__container">
+			<img class="footer__logo" src="./img/logo.svg" alt="Логотип с лапой магазина PetPlanet">
 
 			<div class="footer__info">
-				<p class="footer__copyright">©Petshop, 2024</p>
-				<p class="footer__text">Проект сделан в учебных целях</p>
+				<p class="footer__copyright">&copy;Petshop, 2024</p>
+				<p class="footer__text">Проект сделан в&nbsp;учебных целях</p>
 				<ul class="footer__list">
 					<li class="footer__item">Designer: <a class="footer__link" href="https://t.me/Marshmallowww"
 							target="_blank">Anastasia Ilina</a></li>
-					<li class="footer__item">Developer:<a class="footer__link" href="#" target="_blank">Dmitriy Khlopov</a></li>
+					<li class="footer__item">Developer: <a class="footer__link" href="#" target="_blank">Dmitriy Khlopov</a></li>
 				</ul>
 			</div>
 			<address class="footer__contacts">
 				<a class="footer__email" href="mailto:Petplanet@gmail.com">Petplanet@gmail.com</a>
-				<ul class="footer__list">
-					<li class="footer__item">
+				<ul class="footer__social-list">
+					<li class="footer__sitem">
 						<a class="footer__link" href="#" aria-label="Телеграм бот patplanent">
 							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
