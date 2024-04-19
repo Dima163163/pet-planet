@@ -104,4 +104,27 @@
 		align-items: center;
 		gap: 12px;
 	}
+
+	&__link {
+		display: inline-block;
+		transition: color 0.5s ease-in-out, outline-color 0.12s ease-in-out,
+			transform 0.3s ease-in-out;
+		outline: 1px solid transparent;
+		outline-offset: 3px;
+
+		&:hover {
+			color: $purple;
+		}
+
+		&:focus-visible {
+			outline-color: $carrot;
+			transform: scale(1.4);
+		}
+
+		&:active {
+			color: inherit;
+			outline-color: transparent;
+			opacity: 0.8;
+		}
+	}
 }
